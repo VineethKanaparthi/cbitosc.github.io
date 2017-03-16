@@ -1,19 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		.nav-custom{
+			padding: 0px 30px;
+			background: none;
+			color: #FFFFFF;
+			border-radius: 0px;
+			border: none;
+			margin-bottom: 0px;
+			width: 100%;
+			z-index: 1;
+		}
+		.hero-unit {
+			display: table;
+			position: relative;
+			width: 100%;
+			height: 80vh;
+			/*
+			background:url()
+			*/
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-o-background-size: cover;
+		}
+		.vertical-container{
+			display: table;
+			position: relative;
+			height: 80vh;
+			width: 100%;
+		}
+		.text-vertical-center {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			padding: 0px 40px;
+		}
 
 
+	</style>
 </head>
 <body>
-<h1>Hello</h1>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<nav class="navbar navbar-default nav-custom">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" style="font-size: 30px;">CBIT-OSC</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<!--ul class="nav navbar-nav">
+					<li><a href="#">Link</a></li>
+				</ul-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Github</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="vertical-container">
+						<div class="text-vertical-center">
+							<img class="img-responsive center-block" src="logo_final.png" width="250">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="vertical-container">
+						<div class="text-vertical-center">
+							<h1 class="lead text-center" style="font-size:40px;">We are looking for new minds.<br>
+								Come, join the community.<br>
+								Be part of the movement.<br>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="hero-unit">
+			
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
