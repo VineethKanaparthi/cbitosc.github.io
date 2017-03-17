@@ -9,62 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-	<style type="text/css">
-		body{
-			font-family: 'Lato', sans-serif;
-
-		}
-		.nav-custom{
-			padding: 0px 30px;
-			background: none;
-			color: #FFFFFF;
-			border-radius: 0px;
-			border: none;
-			margin-bottom: 0px;
-			width: 100%;
-			z-index: 1;
-			border-bottom: 1px solid #EEE;
-		}
-		.hero-unit {
-			display: table;
-			position: relative;
-			width: 100%;
-			height: 80vh;
-		/*
-		background:url()
-		*/
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
-		-o-background-size: cover;
-	}
-	.vertical-container{
-		display: table;
-		position: relative;
-		height: 80vh;
-		width: 100%;
-	}
-	.text-vertical-center {
-		display: table-cell;
-		text-align: center;
-		vertical-align: middle;
-		padding: 0px 40px;
-	}
-	.title-h1{
-		margin-top: 0px;
-		font-size: 32px;
-	}
-	.paddings-extra{
-		padding-top: 20px;
-		padding-bottom: 40px;
-	}
-	p{
-		font-size: 18px;
-	}
-
-
-
-</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -78,7 +23,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" style="font-size: 30px;font-weight: 600">CBIT-OSC</a>
+				<a class="navbar-brand nav-brand-text" href="#">CBIT-OSC</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -108,7 +53,7 @@
 			<div class="col-md-8">
 				<div class="vertical-container">
 					<div class="text-vertical-center">
-						<h3 class="lead" style="margin: 0px;">CBIT Open Source Community</h3>
+						<h3 class="lead" style="margin:0px;">CBIT Open Source Community</h3>
 						<h1 class="lead text-center" style="font-size:40px;">We are looking for new minds.<br>
 							Come, join the community.<br>
 							Be part of the movement.<br>
@@ -166,11 +111,11 @@
 		<h1 class="title-h1 lead">Contact</h1><hr style="width:20%">
 		<div class="row">
 			<div class="col-md-6">
-				<h3 class="lead" style="margin-bottom: 0px;">Phone</h3><br>
+				<h3 class="lead bottom-zero">Phone</h3><br>
 				<p>Vihar Kurama - +91 91008 20081</p>
 				<p>Pranith Kumar - +91 88851 68472​⁠​</p>
 			</div>
-			<div class="col-md-6" style="margin-bottom: 0px;"">
+			<div class="col-md-6">
 				<h3 class="lead">E-Mail</h3>
 				<p>cbitosc@gmail.com</p>
 			</div>
@@ -185,19 +130,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	$('a[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			}
-		}
-	});
-</script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
