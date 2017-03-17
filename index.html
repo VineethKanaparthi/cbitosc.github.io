@@ -7,7 +7,13 @@
 	<title></title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 	<style type="text/css">
+		body{
+			font-family: 'Lato', sans-serif;
+
+		}
 		.nav-custom{
 			padding: 0px 30px;
 			background: none;
@@ -17,35 +23,48 @@
 			margin-bottom: 0px;
 			width: 100%;
 			z-index: 1;
+			border-bottom: 1px solid #EEE;
 		}
 		.hero-unit {
 			display: table;
 			position: relative;
 			width: 100%;
 			height: 80vh;
-			/*
-			background:url()
-			*/
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			background-size: cover;
-			-o-background-size: cover;
-		}
-		.vertical-container{
-			display: table;
-			position: relative;
-			height: 80vh;
-			width: 100%;
-		}
-		.text-vertical-center {
-			display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-			padding: 0px 40px;
-		}
+		/*
+		background:url()
+		*/
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+	.vertical-container{
+		display: table;
+		position: relative;
+		height: 80vh;
+		width: 100%;
+	}
+	.text-vertical-center {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		padding: 0px 40px;
+	}
+	.title-h1{
+		margin-top: 0px;
+		font-size: 32px;
+	}
+	.paddings-extra{
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	p{
+		font-size: 18px;
+	}
 
 
-	</style>
+
+</style>
 </head>
 <body>
 
@@ -59,54 +78,126 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" style="font-size: 30px;">CBIT-OSC</a>
+				<a class="navbar-brand" href="#" style="font-size: 30px;font-weight: 600">CBIT-OSC</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<!--ul class="nav navbar-nav">
-					<li><a href="#">Link</a></li>
-				</ul-->
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Github</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
+			<!--ul class="nav navbar-nav">
+				<li><a href="#">Link</a></li>
+			</ul-->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://www.facebook.com/cbitosc/">Facebook</a></li>
+				<li><a href="https://github.com/cbitosc">Github</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
 
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="vertical-container">
-						<div class="text-vertical-center">
-							<img class="img-responsive center-block" src="logo_final.png" width="250">
-						</div>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="vertical-container">
+					<div class="text-vertical-center">
+						<img class="img-responsive center-block" src="assets/logo_final.png" width="250">
 					</div>
 				</div>
-				<div class="col-md-8">
-					<div class="vertical-container">
-						<div class="text-vertical-center">
-							<h1 class="lead text-center" style="font-size:40px;">We are looking for new minds.<br>
-								Come, join the community.<br>
-								Be part of the movement.<br>
-							</h1>
-						</div>
+			</div>
+			<div class="col-md-8">
+				<div class="vertical-container">
+					<div class="text-vertical-center">
+						<h3 class="lead" style="margin: 0px;">CBIT Open Source Community</h3>
+						<h1 class="lead text-center" style="font-size:40px;">We are looking for new minds.<br>
+							Come, join the community.<br>
+							Be part of the movement.<br>
+						</h1>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<section>
-		<div class="hero-unit">
-			
+<hr>
+
+<section class="paddings-extra">
+	<div class="container text-center">
+		<h1 class="title-h1 lead text-center">Community-Agenda</h1><hr style="width: 20%">
+		<p>• GIT : Initiating college level github organisations to spread awareness about its benefits and utilities.</p>
+		<p>• Organising two hands-on workshops per semester aimed at training students to build open source tools and applications</p>
+		<p>• Guest lectures : Inviting experts in various fields to conduct guest lectures for students.</p>
+		<p>• Project-Cell : Forming project cells with the purpose of enabling teams of students to solve real world problems through applications .</p>
+		<p>• Hackathon : Conducting intensive one day hackathons for building open source applications.</p>
+	</div>
+</section>
+
+<hr>
+
+<section style="padding-bottom: 45px; ">
+	<div class="container text-center">
+		<h1 class="title-h1 lead text-center">We are on GitHub</h1><hr style="width: 20%">
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-responsive center-block" src="assets/git.png" width="200">
+			</div>
+			<div class="col-md-8">
+				<h3>Join the team</h3>
+				<p>Join the official GitHub home of CBIT's Open Source community. We share everything from tricks to ideas. Our aim is to learn and grow together, right here on GitHub. Join us, and be a part of the movement for a free and smart world.Please contact for more information.</p>
+				<a class="btn btn-default" href="https://github.com/cbitosc"><i class="fa fa-github" aria-hidden="true"></i>View On Github</a>
+			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<hr>
+
+<section class="paddings-extra" style="background-color:#65BC6A">
+	<div class="container">
+		<h1 style="color: #FFF">“A language that doesn't affect the way you think about programming is not worth knowing.” 
+			― Alan J. Perlis
+		</h1>
+	</div>
+</section>
+
+<section id="contact" class="paddings-extra">
+	<div class="container text-center">
+		<h1 class="title-h1 lead">Contact</h1><hr style="width:20%">
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="lead" style="margin-bottom: 0px;">Phone</h3><br>
+				<p>Vihar Kurama - +91 91008 20081</p>
+				<p>Pranith Kumar - +91 88851 68472​⁠​</p>
+			</div>
+			<div class="col-md-6" style="margin-bottom: 0px;"">
+				<h3 class="lead">E-Mail</h3>
+				<p>cbitosc@gmail.com</p>
+			</div>
+		</div>
+	</div>
+</section>
+<hr>
+
+<section class="text-center">
+	<img class="img-responsive" src="assets/cbit.png" style="display: inline-block;" width="30"><p>Curated by Computer Science Department CBIT</p>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+</script>
 </body>
 </html>
