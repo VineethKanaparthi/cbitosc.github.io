@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+  <style type="text/css">
+
+  .hero-unit{
+    display: table;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    /* background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("") center center;*/
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+
+  }
+
+  .text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+  }
+  .hero-unit-primary-text{
+    text-transform: capitalize;
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFF;
+  }
+  .hero-unit-secondary-text{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  #timer {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: -1px;
+  }
+  #timer span {
+    font-size: 60px;
+    color: #fff;
+    margin: 0 3px 0 15px;
+  }
+  #timer span:first-child {
+    margin-left: 0;
+  }
+  
+
+</style>
+</head>
+<body>
+
+  <section>
+    <div class="hero-unit" style="">
+      <div class="text-vertical-center">
+        <div class="container">
+          <h1 class="hero-unit-primary-text">DjangoCamp</h1>
+          <p class="hero-unit-secondary-text">Oct 6th, 7th -Hyderabad.</p>
+          
+          <h5 style="color: #fff;">Venue : CBIT, Hyderabad.</h5>
+          <div id="timer">
+            <span id="days"></span>days
+            <span id="hours"></span>hours
+            <span id="minutes"></span>minutes
+            <span id="seconds"></span>seconds
+          </div>
+          <h1>#DjangoCampHyderabad</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+    var timer;
+
+    var compareDate = new Date();
+compareDate.setDate(compareDate.getDate() + 17); //just for this demo today + 7 days
+
+timer = setInterval(function() {
+  timeBetweenDates(compareDate);
+}, 1000);
+
+function timeBetweenDates(toDate) {
+  var dateEntered = toDate;
+  var now = new Date();
+  var difference = dateEntered.getTime() - now.getTime();
+
+  if (difference <= 0) {
+
+    // Timer done
+    clearInterval(timer);
+
+  } else {
+
+    var seconds = Math.floor(difference / 1000);
+    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(minutes / 60);
+    var days = Math.floor(hours / 24);
+
+    hours %= 24;
+    minutes %= 60;
+    seconds %= 60;
+
+    $("#days").text(days);
+    $("#hours").text(hours);
+    $("#minutes").text(minutes);
+    $("#seconds").text(seconds);
+  }
+}
+</script>
+</body>
+</html>
